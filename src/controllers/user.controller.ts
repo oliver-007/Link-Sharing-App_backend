@@ -6,7 +6,7 @@ import { User } from "../models/user.model";
 import { ApiResponse } from "../utils/ApiResponse";
 import {
   IAuthenticatedRequest,
-  IGetUserByIdRequest,
+  // IGetUserByIdRequest,
   IRegisterLoginUserRequest,
   IUpdateUserRequest,
 } from "../types";
