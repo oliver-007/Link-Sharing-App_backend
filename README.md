@@ -1,4 +1,4 @@
-# DIV_LINKS
+# DEV_LINKS
 
 ## A link sharing application. User can create his/her profile with all social links and can share with one click.
 
