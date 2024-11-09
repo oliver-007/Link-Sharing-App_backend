@@ -109,8 +109,8 @@ const loginUser = asyncHandler(
     // ++++++++ COOKIE OPTIONS +++++++++
     const options = {
       httpOnly: true,
-      // secure: true, // for https
-      secure: false, // for http. development phase
+      secure: true, // for https
+      // secure: false, // for http. development phase
       sameSite:
         process.env.NODE_ENV === "production"
           ? ("none" as const)
@@ -152,8 +152,8 @@ const logoutUser = asyncHandler(
     // ++++++++++ REMOVING COOKIES ++++++++++
     const options = {
       httpOnly: true,
-      // secure: true,
-      secure: false,
+      secure: true,
+      // secure: false,
       sameSite:
         process.env.NODE_ENV === "production"
           ? ("none" as const)
@@ -256,8 +256,8 @@ const refreshAccessToken = asyncHandler(async (req, res: Response) => {
     // +++++++ COOKIE OPTIONS ++++++++
     const options = {
       httpOnly: true,
-      // secure: true,
-      secure: false,
+      secure: true,
+      // secure: false,
       sameSite:
         process.env.NODE_ENV === "production"
           ? ("none" as const)
